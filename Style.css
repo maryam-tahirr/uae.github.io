@@ -12,6 +12,9 @@ html{
 }
 body{
     box-shadow: 0 0 10px rgba(70, 68, 68, 0.849);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Customizing the scrollbar */
@@ -294,6 +297,7 @@ span{
 /* styling each event card */
 .card{
     min-width: 300px;
+    height: auto;
     background-color: #205072;
     z-index: 2;
     margin: 15px;
