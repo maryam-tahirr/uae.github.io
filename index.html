@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- theme color when sharing the website -->
+    <meta name="theme-color" content="#FAE7F3" />
+    <!-- title and description when sharing the website -->
+    <meta property="og:title" content="UAE Tourism">
+    <meta property="og:description" content="Find The Destination You want">
+    <!-- Icon for the website and the title -->
+    <link rel="Website Icon" type="png" href="Logo1 1.png">
+    <title>Tourism Website</title>
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- top heading for with images that changes with after each second -->
+    <section id="Top-Header">
+        <img id="backgroundImage" src="image11.avif" alt="">
+        <!-- topping it with a logo on it -->
+        <img id="logo" src="Logo.png" alt="Logo">
+    </section>
+    <nav>
+        <!-- logo in the navigation bar which also has animation -->
+        <img src="Logo2.png" id="spin" alt="">
+        
+        <!-- navigation bar links -->
+        <a class="item selected" href="index.html">Home</a>
+        <a class="item" href="Destinations.html">Destinations</a>
+        <a class="item" href="">Accomodations</a>
+        <a class="item" href="Event">Events</a>
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+        <!-- button for opening overlay for login -->
+        <button class="item" id="openButton">LogIn</button>
+    </nav>
+    <!-- Menu Overlay -->
+    <aside id="menuoverlay">
+        <a class="item selected" href="Index.html">Home</a>
+        <a class="item" href="Destinations.html">Destinations</a>
+        <a class="item" href="">Accomodations</a>
+        <a class="item" href="Event">Events</a>
+    </aside>
+
+    <!-- Login overlay -->
+    <section class="login overlay"  id="overlay">
+        <!-- button for closing the overlay -->
+        <svg id="closeButton" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+        <section class="login-page">
+            <!--Login heading on the overlay  -->
+
+            <h2>Login</h2> <br>
+            <!-- grouping together the input field -->
+            <div class="form-group">
+                <label>E-mail Address</label><br>
+                <input id="email" type="email" class="inp" name="email" value="" required autofocus> <br><br>
+                <label>Password</label>
+                <a href="">Forgot Password</a><br>
+                <input type="password" class="inp"><br>
+                <!-- checkbox for Remeber me -->
+                <div class="checkbox-container">
+                    <input type="checkbox" id="myCheckbox">
+                    <label for="myCheckbox">Remember me</label>
+                </div><br>
+                <!-- Submit button -->
+                <button id="submit" class="submit" type="submit">LogIn</button><br>
+                <h3>Don't have an account?<a href="">Create One</a></h3>
+    
+            </div>
+        </section>
+    </section>
+    
+<!-- #################################################################### -->
+    <div class="page2">
+        <!-- the heading for tourists page -->
+        <section id="TT">
+            <span>Over</span>
+            <!-- the number for animation using javascript -->
+            <span class="count" data-target="14" id="Tourist">0</span>&nbsp;&nbsp;&nbsp;
+            <span>Million Tourists visit us From all over the World</span>
+        </section>
+        <section id="ti">
+        </section>
+    </div>
+
+
+<!-- ##################################################################### -->
+    <div class="page11 Event">
+        <!-- heading for event page -->
+        <div class="page1">
+            <span class="typing-effect" id="top">Top Events</span>
+        </div>
+        <!-- container for sliding cards -->
+        <div class="Card-Holder slide-in" id="slideInDiv1">
+            <!-- card 1 -->
+            <div class="card card1">
+                <img src="img1.avif" alt="">
+                <h2>Dubai World Cup</h2>
+                <p>
+                    The Dubai World Cup, one of the region's biggest horse racing events, is one of the most iconic 
+                    annual events in the country. In this luxurious event, ...
+                </p>
+                <h4>8 February 2023</h4>
+            </div>
+            <!-- card 2 -->
+            <div class="card card2">
+                <img src="img2.avif" alt="">
+                <h2>New Year's Eve</h2>
+                <p>New Year's Eve sets the scene for epic celebrations in Dubai. From record-breaking fireworks displays....</p>
+                <h4>
+                    31 December 2023
+                </h4>
+            </div>
+            <!-- card 3 -->
+            <div class="card card3">
+                <img src="img3.jpg" alt="">
+                <h2>Dubai Duty Free Tennis Championships</h2>
+                <p>
+                    This one is for all tennis lovers visiting and living in Dubai! The Dubai Duty Free Championships is one of the most eagerly 
+                    anticipated annual sporting events ...
+                </p>
+                <h4>
+                    21 October 2023
+                </h4>
+            </div>
+            <!-- card 4 -->
+            <div class="card card4">
+                <img src="img4.jpg" alt="">
+                <h2>Mother of Nation Festival</h2>
+                <p>
+                    Citizens attend the Mother of the Nation Festival, which celebrates the cultural heritage of Abu Dhabi and the UAE through the inspirational
+                     achievements of Sheikha Fatima Bint Mubarak.
+                </p>
+                <h4>
+                    8-31 December 2023
+                </h4>
+            </div>
+            <!-- card 5 -->
+            <div class="card card5">
+                <img src="img5.jpg" alt="">
+                <h2>Sharjah International Book Fair</h2>
+                <p>
+                    Sharjah International Book Fair is an 11-day international book fair held annually in Sharjah, United Arab Emirates. It is one of the world's
+                    largest book fairs...
+                </p>
+                <h4>
+                    1-12 November 2023
+                </h4>
+
+            </div>
+            <!-- card for seeing more (it does not link with anything else) -->
+            <div class="card card6">
+                <a href="">See More</a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="White" height="100" width="100"><g><path d="M265.42 348.37c-11.16-15.03-4.22-34.89-6.17-52.12-33.98 4.4-68.01 8.41-102.21 10.74-5.88-.55-23.12 4.34-25.53-.88-6.84-10.87-6.19-24.51-3.12-24.75 45.25-3.6 58.62-3.95 119.82-11.9 4.95.06 12.13-3.38 15.41 1.7 7.93 13.07 5.99 29.29 7.01 43.95 25.93-19.66 51.25-40.36 79.17-57.17-13.47-15.01-29.4-28.54-44.6-41.48l.46.4c-2.67-2.37-5.4-4.75-8.06-7.12l.39.34c-12.57-9.66-20.48-25.2-34.4-32.82.72 14.51.33 29.04.41 43.57-1.03 4.74 3.46 19.11-4.76 17.35-27.98-3.41-55.76-8.3-83.76-11.62-7.33-2-30.82-.88-32.86-8.14-1.11-2.65-3.97-11.06-.23-12.11 9.65 1.99 19.63 1.98 29.45 2.76 27.36 1.37 54.64 4.5 82.06 4.75-.39-15.08.02-30.18-.76-45.24-.92-13.55-2.58-25.4 13.91-12.64 10.32 9.55 18.86 20.94 29.62 30.06 22.69 18.67 44.25 38.52 63.96 60.3 2.27 2.5 6.3 1.02 7.89 4.36 3.31 4.99 4.83 11.11 5.28 17.04.02 2.36.31 5.42-1.42 7.28-7.17 4.95-14.56 9.53-21.93 14.15-27.65 17.35-28.41 20.89-64.11 46.39-4.75 2.01-17.57 18.49-20.92 12.87Z">
+                </path></g></svg></a>
+            </div>
+        </div>
+    </div>
+<!-- ############################################################################################################################## -->
+    <div class="page3">
+        <!-- looped video as the bacckground which doesnt stop and is muted -->
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+<!-- ############################################################################################################################### -->
+    <div class="page4" >
+        <!-- animation for heading -->
+        <h1><span class="typing-eff" id="places">
+            Top Places To Visit
+        </span></h1>
+        <!-- container for image collage -->
+        <div class="container slide-in" id="slideInDiv2">
+            <div class="row">
+                 <!-- column 1 -->
+                <div class="column">
+                    <figure class="overlay-demo">
+                        <img src="1.jpg" alt="">
+                        <figcaption>Louvre Abu Dhabi</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="2.jpg" alt="">
+                        <figcaption>Burj Khalifa</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="3.jpg" alt="">
+                        <figcaption>Sheikh Zayed Mosque</figcaption>
+                    </figure>
+                </div>
+                
+                <!-- column 2 -->
+                <div class="column">
+                    <figure class="overlay-demo">
+                        <img src="4.jpg" alt="">
+                        <figcaption>Jabel Hafeet</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="5.jpeg" alt="">
+                        <figcaption>Jubail Mangroove Park</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="6.avif" alt="">
+                        <figcaption>Hatta Dam</figcaption>
+                    </figure>
+                </div> 
+            </div>
+            <div class="row">
+                <!-- column 3 -->
+                <div class="column">
+                    <figure class="overlay-demo">
+                        <img src="7.jpg" alt="">
+                        <figcaption>Burj Al Arab</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="8.jpg" alt="">
+                        <figcaption>Palm Jumeirah</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="9.jpg" alt="">
+                        <figcaption>Dubai Creek</figcaption>
+                    </figure>
+                </div>
+                
+                <!-- column 4 -->
+                <div class="column">
+                    <figure class="overlay-demo">
+                        <img src="10.jpg" alt="">
+                        <figcaption>Snoopy Island</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="11.jpg" alt="">
+                        <figcaption>Dubai Mall</figcaption>
+                    </figure>
+                    <figure class="overlay-demo">
+                        <img src="12.jpg" alt="">
+                        <figcaption>Al Ain Oasis</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- link for see more (doesnt work) -->
+        <p><a href="">See more </a></p>
+    </div>
+
+<!-- ############################################################################################################################# -->
+    <div class="page5">
+        <!-- heading for wheather page -->
+        <h1><span class="typing-effect">Wheather Around UAE</span></h1>
+
+        <!-- calling API for wheather around uae -->
+        <div class="city-container" id="weather-info"></div>
+    </div>
+
+<!-- ###################################################################################################### -->
+    <div class="page6">
+        <!-- heading for accomodation page -->
+        <h1><span class="typing-effect">Accommodations</span></h1>
+    </div>
+    <div class="page7">
+        <!-- container for animated carousel images  -->
+        <div id="carousel-container">
+            <div id="img1" class="carousel-img" style="opacity: 1;"></div>
+            <div id="img2" class="carousel-img"></div>
+            <div id="img3" class="carousel-img"></div>
+            <div id="img4" class="carousel-img"></div>
+            <div id="img5" class="carousel-img" ></div>
+        </div>
+        <!-- text for each image which changes with the image -->
+        <div id="im1" class="carousel-text" style="opacity: 1;">
+            <h2>Queen Elizabeth 2</h2>
+                <h3>From AED 295</h3>
+        </div>
+        <div id="im2" class="carousel-text">
+            <h2>Reflections Hotel.</h2>
+            <h3>from Aed 190</h3>
+        </div>
+        <div id="im3" class="carousel-text">
+            <h2>Sleep ‘n fly T1-D</h2>
+            <h3>from Aed 169</h3>
+        </div>
+        <div id="im4" class="carousel-text">
+            <h2>Farm and Chalets for Daily Rent</h2>
+            <h3>from Aed 700</h3>
+        </div>
+        <div id="im5" class="carousel-text">
+            <h2>Waldorf Astoria Ras Al Khaimah</h2>
+            <h3>from Aed 1,322</h3>
+        </div>
+
+        <!-- buttons for going to next or previous image and their heading -->
+        <button id="prevBtn" onclick="changeImage(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg></button>
+        <button id="nextBtn" onclick="changeImage(1)"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button>
+    </div>
+    <!-- ************************************************************************ -->
+    <div class="faq-page slide-in" id="slideInDiv">
+        <!-- heading for FAQ -->
+        <h1>Frequently Asked Questions</h1>
+
+        <!-- using details for each FAQ with its answer -->
+        <details>
+            <summary>1. How do I book accommodation through your website?</summary>
+            <p>To book accommodation, simply visit our "Book Now" page, choose your destination, enter your travel dates, and browse available options. Follow the prompts to complete your reservation securely.</p>
+        </details>
+    
+        <details>
+            <summary>2. What types of payment methods do you accept for bookings?</summary>
+            <p>We accept various payment methods, including credit/debit cards and secure online payment gateways. Details can be found during the booking process.</p>
+        </details>
+    
+        <details>
+            <summary>3. Can I make changes to my reservation after booking?</summary>
+            <p>Yes, you can usually make modifications to your reservation depending on the property's policies. Log in to your account or contact our customer support for assistance.</p>
+        </details>
+    </div>
+    <!-- ***************************************************************************************************** -->
+    <div class="end">
+        <!-- Ending page with conact us links (inactive)-->
+        <div class="Contact-Page">
+            <!-- hoverable links -->
+            <li>Resources</li>
+            <li>About this Portal</li>
+            <li>Disclaimer</li>
+            <li>Digital Participation Policy</li>
+            <li>Site Map</li>
+            <li>FAQs</li>
+            <li>Map</li>
+            <li>eNewsletter</li>
+            <li>Citizen Charter</li>
+            <li>Accessibility</li>
+            <li>Website statistics</li>
+            <li>Emergrncy Contacts</li>
+            <li>Government data</li>
+            <li>SDGs</li>
+            <li>Environment</li>
+            <li>Digital Government</li>
+        </div>
+        <!-- Social media links -->
+        <div class="socials">
+            <!-- container -->
+            <div class="wrapper">
+                <!-- button 1 -->
+                <div class="button">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg></div>
+                      <pre>Facebook</pre>
+                </div>
+                <!--  button 2 -->
+                <div class="button">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></div>
+                      <pre>Instagram</pre>
+                </div>
+                <!-- button 3 -->
+                <div class="button">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                      </svg></div>
+                      <pre>Twitter</pre>
+                </div>
+                <!-- button 4 -->
+                <div class="button">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                      </svg></div>
+                      <pre>Youtube</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  Footer -->
+    <footer>
+        &copy;Maryam Tahir 2024
+    </footer>
+    
+
+
+    <!-- #####################  LINKING THE SCRIPT     ################################################ -->
+    <script src="Script.js"></script>
+</body>
+</html>
