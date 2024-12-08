@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+    
     <!-- top heading for with images that changes with after each second -->
     <section id="Top-Header">
         <img id="backgroundImage" src="image11.avif" alt="">
@@ -28,20 +29,22 @@
         <!-- navigation bar links -->
         <a class="item selected" href="index.html">Home</a>
         <a class="item" href="Destinations.html">Destinations</a>
-        <a class="item" href="">Accomodations</a>
-        <a class="item" href="Event">Events</a>
+        <a class="item" href="#accomodate">Accomodations</a>
+        <a class="item" href="#event">Events</a>
         <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
         </svg>
         <!-- button for opening overlay for login -->
         <button class="item" id="openButton">LogIn</button>
+        <div id="underline"></div>
+        
     </nav>
     <!-- Menu Overlay -->
     <aside id="menuoverlay">
         <a class="item selected" href="Index.html">Home</a>
         <a class="item" href="Destinations.html">Destinations</a>
-        <a class="item" href="">Accomodations</a>
-        <a class="item" href="Event">Events</a>
+        <a class="item" href="#accomodate">Accomodations</a>
+        <a class="item" href="#event">Events</a>
     </aside>
 
     <!-- Login overlay -->
@@ -89,7 +92,7 @@
 
 
 <!-- ##################################################################### -->
-    <div class="page11 Event">
+    <div class="page11 Event" id="event">
         <!-- heading for event page -->
         <div class="page1">
             <span class="typing-effect" id="top">Top Events</span>
@@ -248,16 +251,16 @@
     </div>
 
 <!-- ############################################################################################################################# -->
-    <div class="page5">
+    <div class="page5" id="we">
         <!-- heading for wheather page -->
-        <h1><span class="typing-effect">Wheather Around UAE</span></h1>
+        <h1><span class="typing-effect" >Wheather Around UAE</span></h1>
 
         <!-- calling API for wheather around uae -->
         <div class="city-container" id="weather-info"></div>
     </div>
 
 <!-- ###################################################################################################### -->
-    <div class="page6">
+    <div class="page6" id="accomodate">
         <!-- heading for accomodation page -->
         <h1><span class="typing-effect">Accommodations</span></h1>
     </div>
@@ -323,6 +326,7 @@
     </div>
     <!-- ***************************************************************************************************** -->
     <div class="end">
+        
         <!-- Ending page with conact us links (inactive)-->
         <div class="Contact-Page">
             <!-- hoverable links -->
@@ -385,7 +389,8 @@
         &copy;Maryam Tahir 2024
     </footer>
     
-
+    <!-- Back to the top -->
+    <button id="backToTopBtn">&#8679;</button>
 
     <!-- #####################  LINKING THE SCRIPT     ################################################ -->
     <script src="Script.js"></script>
